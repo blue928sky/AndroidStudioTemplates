@@ -38,6 +38,7 @@ https://play.google.com/store/apps/details?id=com.uchan.${PROJECT_NAME.toLowerCa
 
 #[[##]]# 詳しい説明
 ```
+
 ## .commit_template
 [.commit_template](templates/.commit_template)<br>
 GitHubのコミットメッセージのテンプレート

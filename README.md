@@ -22,7 +22,7 @@ https://play.google.com/store/apps/details?id={package id}
 [README.md.vm](templates/README.md.vm)<br>
 Android studioにはApache VelocityでNew fileできるのでそれも作成
 - 設定場所は[**Settings**] > [**Editor**] > [**File and Code Templates**]から+で作れる
-- **Name**を`README`、**Extention**を`md`、**File name**を`README`にすればREADME.mdを勝手に生成してくれる
+- **Name**を`README`、**Extension**を`md`、**File name**を`README`にすればREADME.mdを勝手に生成してくれる
 - 使用方法は追加したいフォルダ(大体はプロジェクトクトフォルダ)を右クリック[New] > [README]で自動生成してくれる
   - *Package nameに問題がある場合は適宜変更*
 - **※Reformat according to styleのチェックを外さないと2行目がずれる**<br>

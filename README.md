@@ -12,5 +12,5 @@ README.mdのテンプレート
 - **※Reformat according to styleのチェックを外さないと2行目がずれる**<br>
 ![reference](img/code_templates_memo.png)
 ## .commit_template
-[.commit_template](templates/code_templates_memo.png)<br>
+[.commit_template](templates/.commit_template)<br>
 GitHubのコミットメッセージのテンプレート

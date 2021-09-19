@@ -7,7 +7,7 @@ Android studioのプロジェクトファイルをGithubにあげる時によく
 [README.md](templates/README.md)<br>
 README.mdのテンプレート<br>
 Google play storeのURLとアプリ名、簡単な説明、詳細説明を記入
-``` md
+``` markdown
 ## Google Play Store
 https://play.google.com/store/apps/details?id={package id}
 

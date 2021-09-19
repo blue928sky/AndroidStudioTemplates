@@ -7,7 +7,7 @@ README.mdのテンプレート
 - [README.md.vm](templates/README.md.vm)
   - Android studioにはApache VelocityでNew fileできるのでそれも作成
   - 設定場所は[Settings] > [Editor] > [File and Code Templates]から+で作れる
-  - **※Reformat according to styleのチェックを外さないと2行目がずれる**
-  - ![reference](img/code_templates_memo.png)
+  - **※Reformat according to styleのチェックを外さないと2行目がずれる**<br>
+  ![reference](img/code_templates_memo.png)
 - [.commit_template](templates/code_templates_memo.png)<br>
 GitHubのコミットメッセージのテンプレート

@@ -2,11 +2,12 @@
 Android studioのプロジェクトファイルをGithubにあげる時によく使用するファイルを備忘録的にあげておきます
 
 # テンプレート
+
 ## READ.md
 [README.md](templates/README.md)<br>
 README.mdのテンプレート<br>
 Google play storeのURLとアプリ名、簡単な説明、詳細説明を記入
-```
+``` md
 ## Google Play Store
 https://play.google.com/store/apps/details?id={package id}
 
@@ -16,6 +17,7 @@ https://play.google.com/store/apps/details?id={package id}
 
 ## 詳しい説明
 ```
+
 ## README.md.vm
 [README.md.vm](templates/README.md.vm)<br>
 Android studioにはApache VelocityでNew fileできるのでそれも作成
@@ -39,7 +41,7 @@ https://play.google.com/store/apps/details?id=com.uchan.${PROJECT_NAME.toLowerCa
 ## .commit_template
 [.commit_template](templates/.commit_template)<br>
 GitHubのコミットメッセージのテンプレート
-```
+``` markdown
 # ==== Emojis ====
 # 🐛 :bug:           fix: バグ修正
 # 🔧 :wrench:        modify: 機能改善
@@ -62,10 +64,24 @@ GitHubのコミットメッセージのテンプレート
 #
 # Commit body...
 ```
+Android studioでは
+```
+$git config commit.template {file name}
+```
+ってやっても出てこない(vimとかには出てくるけど、VCSのコミットダイアログには反映されない)のでPluginsで[Git Commit Message Helper](https://plugins.jetbrains.com/plugin/13477-git-commit-message-helper)を追加して、コミットコメントを登録している
+- 登録の仕方は[**Settings**] > [**Other Settings**] > [**GitCommitMessageHelper**]からできる
+- Templateも設定できるからそこはお好きなように
+- 一括登録とかできたり、別の端末で同じ操作をしたい時は少し不便かなって感じがする……
+- あと、何故かdescriptionの絵文字がちょこちょこ消える
+<img src="./img/Git_Commit_Message_Helper_memo.png" width="600px" /><br>
+
+絵文字だけ使いたい人は[Git Commit Guide](https://plugins.jetbrains.com/plugin/16265-git-commit-guide)とかあるし、地味にこのPrefixに使うのオススメって出してくれるから使いやすい<br>
+テンプレート登録とかはない
+
 ## .gitignore
 [.gitignore](templates/.gitignore)<br>
 基本はAndroid studioが自動生成する物とか`.jks`ファイル、`google-services.json`をはじく<br>
-`.aab`も弾いてる<br>
+念のため`.aab`も弾いてる<br>
 `.idea/`は正直なくても何とかなるよなって気がするけど、どっちでもいいかって意味で細かくははじいてない
 ```
 # 自動生成

@@ -146,3 +146,34 @@ Thumbs.db
 app/google-services.json
 *.jks
 ```
+
+## おまけ(テンプレートじゃないけど)
+### proguard-rules.pro
+[proguard-rules.pro](templates/proguard-rules.pro)<br>
+難読化すると問題がある場合
+`app/`にproguard-rules.proを設置して`app/build.gradle`に
+``` gradle
+# {flavor} は release とか debug とかビルドタイプを記入
+android {
+  buildTypes {
+    {flavor} {
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+      
+      # shrinkResourcesは重複リソースを結合してくれる
+      shrinkResources true
+    }
+  }
+}
+```
+を記載する必要あり
+
+``` pro
+# Gson使っている場合
+# dataクラスをJson変換するとおかしくなるため
+-keepnames class com.sample.path.* { *; }
+
+# Firebase Crashlytics使ってる場合
+# consoleで行数やクラス名が難読化のままで見づらいため
+-keepattributes SourceFile,LineNumberTable
+```

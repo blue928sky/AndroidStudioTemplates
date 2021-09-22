@@ -20,10 +20,11 @@ https://play.google.com/store/apps/details?id={package id}
 
 ## README.md.vm
 [README.md.vm](templates/README.md.vm)<br>
+(.vmで保存する必要はない)<br>
 Android studioにはApache VelocityでNew fileできるのでそれも作成
 - 設定場所は[**Settings**] > [**Editor**] > [**File and Code Templates**]から+で作れる
 - **Name**を`README`、**Extension**を`md`、**File name**を`README`にすればREADME.mdを勝手に生成してくれる
-- 使用方法は追加したいフォルダ(大体はプロジェクトフォルダ)を右クリック[New] > [README]で自動生成してくれる
+- 使用方法は追加したいフォルダ(大体はプロジェクトフォルダ)を右クリック[**new**] > [**README**]で自動生成してくれる
   - *Package nameに問題がある場合は適宜変更*
 - **※Reformat according to styleのチェックを外さないと2行目がずれる**<br>
 ![reference](img/code_templates_memo.png)
@@ -41,7 +42,8 @@ https://play.google.com/store/apps/details?id=com.uchan.${PROJECT_NAME.toLowerCa
 
 ## .commit_template
 [.commit_template](templates/.commit_template)<br>
-GitHubのコミットメッセージのテンプレート
+GitHubのコミットメッセージのテンプレート<br>
+ファイル名は何でもいい
 ``` markdown
 # ==== Emojis ====
 # 🐛 :bug:           fix: バグ修正

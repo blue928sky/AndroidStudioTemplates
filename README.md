@@ -143,7 +143,7 @@ Thumbs.db
 .idea/dataSources.ids
 
 # 追加
-app/google-services.json
+google-services.json
 *.jks
 ```
 

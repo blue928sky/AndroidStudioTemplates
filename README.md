@@ -30,7 +30,7 @@ Android studioにはApache VelocityでNew fileできるのでそれも作成
 ![reference](img/code_templates_memo.png)
 ```
 #[[##]]# Google Play Store
-https://play.google.com/store/apps/details?id=com.uchan.${PROJECT_NAME.toLowerCase()}
+https://play.google.com/store/apps/details?id=com.sample.${PROJECT_NAME.toLowerCase()}
 # id以降は自身の環境に合わせて
 
 #[[##]]# アプリ名
